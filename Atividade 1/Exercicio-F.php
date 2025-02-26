@@ -25,20 +25,18 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 $n1 = $_POST["n1"];
-$porcentagem = 0.05;
-$porcentagem2 = 0.5;
+$porcentagem = 0.07;
 
 $total = $n1*$porcentagem;
-$total2 = $n1*$porcentagem2;
 
-echo "<br> 5% de ", $n1 ," é ",$total; 
-echo "<br> 50% de ", $n1 ," é ",$total2; 
+$valortotal = $n1-$total;
+
+
+echo "<br> Você tem 7% de desconto, o valor da sua compra é ", $n1 ,", o valor do desconto é ", $total ,", do produto com desconto é ",$valortotal; 
+
 
 }
 ?>
 
 </body>
 </html>
-
-
-

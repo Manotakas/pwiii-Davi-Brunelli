@@ -15,6 +15,12 @@
 
 <br><br>
 
+<label >Valor 2:</label>
+
+<input type="number" name = "n2" required>
+
+<br><br>
+
 <input type="submit" value = "Calcular">
 
 </form>
@@ -25,20 +31,19 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 $n1 = $_POST["n1"];
-$porcentagem = 0.05;
-$porcentagem2 = 0.5;
+$n2 = $_POST["n2"];
 
-$total = $n1*$porcentagem;
-$total2 = $n1*$porcentagem2;
+$q1 = $n1*$n1;
+$q2 = $n2*$n2;
 
-echo "<br> 5% de ", $n1 ," é ",$total; 
-echo "<br> 50% de ", $n1 ," é ",$total2; 
+$total = $q1+$q2;
+
+echo "<br> O quadrado de ", $n1 ," é ",$q1; 
+echo "<br> O quadrado de ", $n2 ," é ",$q2; 
+echo "<br> E a soma dos dois é ", $total; 
 
 }
 ?>
 
 </body>
 </html>
-
-
-
