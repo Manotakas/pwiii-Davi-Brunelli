@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercico D</title>
+    <title>Exercico I</title>
 </head>
 <body>
     
+<h1>Calculadora de Parcelas: </h1>
+<br>
 <form method="POST">
 
 <label>Valor:</label>
 
 <input type="number" name = "n1" required>
-
-<br><br>
-
-<label >Valor 2:</label>
-
-<input type="number" name = "n2" required>
 
 <br><br>
 
@@ -31,16 +27,15 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 $n1 = $_POST["n1"];
-$n2 = $_POST["n2"];
+$porcentagem = 0.16;
 
-$q1 = $n1*$n1;
-$q2 = $n2*$n2;
+$au = $n1*$porcentagem;
+$total = $n1+$au;
+$parcelar = $total/10;
 
-$total = $q1+$q2;
 
-echo "<br> O quadrado de ", $n1 ," é ",$q1; 
-echo "<br> O quadrado de ", $n2 ," é ",$q2; 
-echo "<br> E a soma dos dois é ", $total; 
+echo "<br> Aumentando o valor em 16% fica ", $total ," e parcelado em 10 vezes é ",$parcelar; 
+
 
 }
 ?>
