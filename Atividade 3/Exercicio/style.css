@@ -9,11 +9,17 @@ h1{
 
 #quadrado{
     background-color: #c98181;
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 400px;
     font-size: 25pt;
     margin: auto;
     text-align: center;
     
     
+}
+
+input{
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
 }
