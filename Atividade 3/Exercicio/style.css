@@ -1,0 +1,19 @@
+body{
+    background-color: #ece8d8;
+}
+
+h1{
+    text-align: center;
+    font-size: 30pt;
+}
+
+#quadrado{
+    background-color: #c98181;
+    width: 500px;
+    height: 600px;
+    font-size: 25pt;
+    margin: auto;
+    text-align: center;
+    
+    
+}
